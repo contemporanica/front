@@ -1,0 +1,14 @@
+.login{
+    text-align: center; 
+    width: 100%;
+}
+
+.texto-rosa{
+    color:#e47777 ;
+}
+
+.btn-primary{
+    background-color: #e47777 ;
+    border-width: 0px;
+    color: white;
+}
