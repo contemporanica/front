@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { ProtectedRoutingModule } from './protected-routing.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { MySheetsComponent } from './pages/my-sheets/my-sheets.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    MySheetsComponent
+    MySheetsComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
