@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscar piezas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- ARCHIVOS NECESARIOS PARA EL SELECTOR DE INSTRUMENTOS -->
+    <link rel="stylesheet" href="multi-select-tag.css" />
+    <script src="multi-select-tag.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div class="container my-5">
+      <div class="card">
+        <form>
+          <!-- HEADER -->
+          <div class="card-header py-4 px-5 bg-light border-0">
+            <h4 class="mb-0 fw-bold">Búsqueda</h4>
+          </div>
+
+          <!-- BODY -->
+          <div class="card-body px-5">
+            <div class="row gx-xl-5">
+              <div class="mb-3">
+                <label for="titulo" class="form-label"
+                  >Título a buscar</label
+                >
+                <input type="text" class="form-control" name="titulo" id="titulo" />
+              </div>
+            </div>
+
+            <hr class="my-3" />
+
+            <div class="row gx-xl-5">
+              <h5>Filtrar por compositor</h5>
+
+              <div class="mb-3">
+                <label for="compositor" class="form-label"
+                  >Nombre del compositor</label
+                >
+                <input type="text" class="form-control" name="compositor" id="compositor" />
+              </div>
+            </div>
+
+            <hr class="my-3" />
+
+            <!-- FILTRO POR INSTRUMENTOS -->
+            <div class="row gx-xl-5">
+              <h5>Filtrar por instrumentos</h5>
+
+              <div class="mb-3">
+                <label for="instrumentos" class="form-label"
+                  >Seleccionar instrumento/s</label
+                >
+                <!-- PARA OBTENER LISTA DE ELEMENTOS SELECCIONADOS -> document.querySelectorAll('#instrumentos :checked') -->
+                <select
+                  name="instrumentos"
+                  id="instrumentos"
+                  multiple
+                >
+                  <!-- EMPIEZA FOR EACH, CADA OPCION CONTENDRA EL VALOR DEL ID DEL INSTRUMENTO -->
+                  <option value="1">Flauta</option>
+                  <option value="2">Violin</option>
+                  <option value="3">Piano</option>
+                  <option value="4">Saxofon</option>
+                  <option value="5">Violonchelo</option>
+                  <option value="6">Clarinete</option>
+                  <option value="7">Trompeta</option>
+                  <option value="8">Contrabajo</option>
+                  <option value="9">Clavicordio</option>
+                  <option value="10">Tuba</option>
+                </select>
+                <!-- TERMINA FOR EACH -->
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="card-footer text-end py-4 px-5 bg-light border-0">
+            <button class="btn btn-dark btn-rounded">
+              Aplicar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      new MultiSelectTag("instrumentos"); // id
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
