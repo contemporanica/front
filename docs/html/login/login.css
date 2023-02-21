@@ -1,3 +1,9 @@
+
+.w-600{
+    width: 600px;
+}
+
+
 .login{
     text-align: center; 
     width: 100%;
@@ -16,3 +22,22 @@
     color: white;
 }
 
+.background-image{
+    background-image:url("../img/partituraFondo.jpg") ;
+    background-repeat: no-repeat;
+     background-size: cover;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    z-index: -1;
+    opacity:0.7; 
+    filter:blur(3px);
+    }
+    
+    .titulo{
+        text-align: center; 
+        
+    }
+    .registrate{
+        color: black;
+    }
