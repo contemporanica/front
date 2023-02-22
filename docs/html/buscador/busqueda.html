@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buscar piezas</title>
+    <title>Búsqueda</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,119 +14,141 @@
     <!-- ARCHIVOS NECESARIOS PARA EL SELECTOR DE INSTRUMENTOS -->
     <link rel="stylesheet" href="multi-select-tag.css" />
     <script src="multi-select-tag.js"></script>
-    
+    <link rel="stylesheet" href="resultados.css" />
   </head>
 
   <body>
-    
- 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black " aria-label="Offcanvas navbar large">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black"
+      aria-label="Offcanvas navbar large"
+    >
       <div class="container-fluid">
-          <a href="#">
-              <img src="../../materialGrafico/logosimplificado.png" width="90" height="90" alt="Logo" />
-          </a>
-          <a class="navbar-brand" href="#">Contemporanica</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-              aria-controls="offcanvasNavbar2">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
-              aria-labelledby="offcanvasNavbar2Label">
-              <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Contemporanica</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                      aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="../index/indice.html">Inicio</a>
-                      </li>
-  
-  
-                      <li class="nav-item">
-                          <a class="nav-link" href="../buscador/busqueda.html">Busca  piezas</a>
-                      </li>
-  
-                      <!-- SI NO ESTA LOGEADO -->
-                      <li class="nav-item">
-                          <a class="nav-link" href="../login/login.html">Iniciar sesion</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="../registro/registro.html">Registrarme</a>
-                      </li>
-                      <!-- SI NO ESTA LOGEADO -->
-  
-                      <!-- SI ESTA LOGEADO -->
-                      
-                      <!-- SI ESTA LOGEADO -->
-  
-                  </ul>
-                  <form class="d-flex mt-3 mt-lg-0" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                  </form>
-              </div>
+        <a href="#">
+          <img
+            src="../../materialGrafico/logosimplificado.png"
+            width="90"
+            height="90"
+            alt="Logo"
+          />
+        </a>
+        <a class="navbar-brand" href="#">Contemporanica</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+              Contemporanica
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index/indice.html"
+                  >Inicio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../buscador/busqueda.html"
+                  >Busca piezas</a
+                >
+              </li>
+
+              <!-- SI NO ESTA LOGEADO -->
+              <li class="nav-item">
+                <a class="nav-link" href="../login/login.html"
+                  >Iniciar sesion</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../registro/registro.html"
+                  >Registrarme</a
+                >
+              </li>
+              <!-- SI NO ESTA LOGEADO -->
+
+              <!-- SI ESTA LOGEADO -->
+
+              <!-- SI ESTA LOGEADO -->
+            </ul>
+          </div>
+        </div>
       </div>
-  </nav>
-
-
-
-
-
-
-
-
-
+    </nav>
 
     <div class="container my-5">
       <div class="card">
         <form>
           <!-- HEADER -->
           <div class="card-header py-4 px-5 bg-light border-0">
-            <h4 class="mb-0 fw-bold">Búsqueda</h4>
+            <h4 class="mb-0 fw-bold">Filtrar búsqueda</h4>
           </div>
 
           <!-- BODY -->
           <div class="card-body px-5">
             <div class="row gx-xl-5">
-              <div class="mb-3">
-                <label for="titulo" class="form-label"
-                  >Título a buscar</label
-                >
-                <input type="text" class="form-control" name="titulo" id="titulo" />
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="titulo" class="form-label"
+                        >Título a buscar</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="titulo"
+                        id="titulo"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="compositor" class="form-label"
+                        >Nombre del compositor</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="compositor"
+                        id="compositor"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <hr class="my-1" />
-
-            <div class="row gx-xl-5">
-              <h5>Filtrar por compositor</h5>
-
-              <div class="mb-3">
-                <label for="compositor" class="form-label"
-                  >Nombre del compositor</label
-                >
-                <input type="text" class="form-control" name="compositor" id="compositor" />
-              </div>
-            </div>
-
-            <hr class="my-1" />
 
             <!-- FILTRO POR INSTRUMENTOS -->
             <div class="row gx-xl-5">
-              <h5>Filtrar por instrumentos</h5>
-
               <div class="mb-3">
                 <label for="instrumentos" class="form-label"
                   >Seleccionar instrumento/s</label
                 >
                 <!-- PARA OBTENER LISTA DE ELEMENTOS SELECCIONADOS -> document.querySelectorAll('#instrumentos :checked') -->
-                <select
-                  name="instrumentos"
-                  id="instrumentos"
-                  multiple
-                >
+                <select name="instrumentos" id="instrumentos" multiple>
                   <!-- EMPIEZA FOR EACH, CADA OPCION CONTENDRA EL VALOR DEL ID DEL INSTRUMENTO -->
                   <option value="1">Flauta</option>
                   <option value="2">Violin</option>
@@ -145,17 +167,106 @@
           </div>
 
           <!-- FOOTER -->
-          <div class="card-footer text-end py-4 px-5 bg-light border-0">
-            <button class="btn btn-dark btn-rounded">
-              Aplicar
-            </button>
+          <div class="card-footer text-end py-3 px-5 bg-light border-0">
+            <button class="btn btn-dark btn-rounded">Aplicar</button>
           </div>
         </form>
       </div>
+
+
+      <div class="card">
+        <div class="card-header py-4 px-5 bg-light border-0">
+          <h4 class="mb-0 fw-bold">Resultados</h4>
+        </div>
+
+        <div class="card-body px-5">
+          <section>
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Buscar" />
+            </div>
+          </section>
+
+          <div class="table-responsive">
+            <section class="table__body">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Compositor</th>
+                    <th>Titulo</th>
+                    <th>Fecha</th>
+                    <th>Intrumentos</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="#"><img src="images/Zinzu Chan Lee.jpg" /></a>
+                      Joaquín Rodrigo
+                    </td>
+                    <td>Concierto de Aranjuez</td>
+                    <td>1939</td>
+                    <td>Guitarra, orquesta</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#"><img src="images/Jeet Saru.jpg" /></a>Antonio
+                      Vivaldi
+                    </td>
+                    <td>Las Cuatro Estaciones</td>
+                    <td>1725</td>
+                    <td>Violín, orquesta</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#"><img src="images/Sonal Gharti.jpg" /></a>
+                      Ludwig van Beethoven
+                    </td>
+                    <td>Sonata para piano nº 14</td>
+                    <td>1801</td>
+                    <td>Piano</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#"><img src="images/Alex Gonley.jpg" /></a>
+                      Giuseppe Verdi
+                    </td>
+                    <td>La Traviata</td>
+                    <td>1853</td>
+                    <td>Orquesta, coro</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#"><img src="images/Alson GC.jpg" /></a> Ludwig
+                      van Beethoven
+                    </td>
+                    <td>Sinfonía nº 5</td>
+                    <td>1808</td>
+                    <td>Orquesta</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#"><img src="images/Sarita Limbu.jpg" /></a>
+                      Fryderyk Chopin
+                    </td>
+                    <td>Concierto para piano nº 2</td>
+                    <td>1830</td>
+                    <td>Piano, orquesta</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script>
-      new MultiSelectTag("instrumentos"); // id
+      new MultiSelectTag("instrumentos");
     </script>
+
+    <script src="resultados.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
