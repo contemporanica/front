@@ -1,15 +1,30 @@
-import { ActivatedRouteSnapshot, CanActivate, CanLoad, Route, RouterStateSnapshot, UrlSegment, UrlTree } from "@angular/router";
-import { Observable } from "rxjs";
+import { Injectable } from '@angular/core';
+import { CanActivate, CanLoad, Router } from '@angular/router';
+import { Observable, tap } from 'rxjs';
+import { AuthService } from '../services/auth.service';
 
+@Injectable({
+  providedIn: 'root',
+})
 export class AuthGuard implements CanActivate, CanLoad {
+  constructor(private _authService: AuthService, private _router: Router) {}
 
-    constructor() { }
-
-    canLoad(route: Route, segments: UrlSegment[]): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-        throw new Error("Method not implemented.");
-    }
-    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-        throw new Error("Method not implemented.");
-    }
-
+  canLoad(): Observable<boolean> | boolean {
+    return this._authService.validateToken().pipe(
+      tap((valid) => {
+        if (!valid) {
+          this._router.navigateByUrl('/auth');
+        }
+      })
+    );
+  }
+  canActivate(): Observable<boolean> | boolean {
+    return this._authService.validateToken().pipe(
+      tap((valid) => {
+        if (!valid) {
+          this._router.navigateByUrl('/auth');
+        }
+      })
+    );
+  }
 }

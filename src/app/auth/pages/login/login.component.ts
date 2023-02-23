@@ -1,17 +1,19 @@
-import { Component,Input,Output } from '@angular/core';
-import { FormControl,Validators,FormBuilder } from '@angular/forms';
+import { Component, Input, Output } from '@angular/core';
+import {
+  FormControl,
+  Validators,
+  FormBuilder,
+  FormGroup,
+} from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-
-  constructor(private fb: FormBuilder) {
-
-  }
-
   get email() {
     return this.formUser.get('email') as FormControl;
   }
@@ -20,16 +22,27 @@ export class LoginComponent {
     return this.formUser.get('pass') as FormControl;
   }
 
-  formUser = this.fb.group( {
-    'email': ['', [Validators.required, Validators.email]],
-    'pass': ['', Validators.required]
+  formUser: FormGroup = this._fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    pass: ['', Validators.required, Validators.minLength(8)],
   });
 
+  constructor(
+    private _fb: FormBuilder,
+    private _authService: AuthService,
+    private _router: Router
+  ) {}
+
   submit() {
-    console.log(this.formUser.value)
+    console.log(this.formUser.value);
+    const { email, pass } = this.formUser.value;
+
+    this._authService.login(email, pass).subscribe((ok) => {
+      if (ok === true) {
+        this._router.navigateByUrl('./browse');
+      } else {
+        console.log(ok);
+      }
+    });
   }
-
-  // @Input();
-
-  // @Output();
 }
