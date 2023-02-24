@@ -5,14 +5,14 @@ Se contruye el contenedor con el front de nuestra página, añadiendo la estruct
 ## .dockerbuild
 
 _Primera Etapa:_
-Utilizamos una imagen de Node
-Copiamos el código de la aplicación en una carpeta llamada app
-Instalamos las dependencias del archivo package.json
-Creamos los archivos de producción usando la imagen de Node
+Utilizamos una imagen de Node.
+Copiamos el código de la aplicación en una carpeta llamada app.
+Instalamos las dependencias del archivo package.json.
+Creamos los archivos de producción usando la imagen de Node.
 
 _Segunda Etapa:_
 Utilizamos una imagen del servidor de Nginx para crear un servidor y poder desplegar la aplicación en este.
-Copiamos los archivos de producción de app/dist/PokeApp a la ruta /usr/share/nginx/html.
+Copiamos los archivos de producción de app/dist/front a la ruta /usr/share/nginx/html.
 
 ## .dockerignore
 
