@@ -47,7 +47,7 @@ Se utilizaron las siguientes fuentes extraídas de Google Fonts (https://fonts.g
 
 ## Colores 🛠️
 
-Se utilizaron los siguientes tonos de color extraídos de la paleta de Photoshop:
+Se utilizaron los siguientes tonos de color extraídos de la paleta de Photoshop CS 19:
 
 * [TonoNegro](#000000) 
 * [URL] (https://colorate.azurewebsites.net/SwatchColor/000000);
