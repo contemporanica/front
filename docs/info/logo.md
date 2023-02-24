@@ -6,10 +6,16 @@ A continuación se va a documentar el proceso de creación del logo de la págin
 
 Empezamos creando 3 logos para tener donde elegir: 'acuarelaAmarilla', 'cuadrado' y 'azul'. A partir de entonces, se iniciariaron las votaciones pertinentes hasta filtrar y llegar al acabado final que quedó lejos de las ideas iniciales anteriormente mencionadas.
 
+![C:\Users\Paula\Desktop\2_DAW\APP\front\docs\materialGrafico\logosDescartados\acuarelaAmarilla.png] 
+![C:\Users\Paula\Desktop\2_DAW\APP\front\docs\materialGrafico\logosDescartados\azul.png]
+![C:\Users\Paula\Desktop\2_DAW\APP\front\docs\materialGrafico\logosDescartados\cuadrado.png]
+
 
 ### Primera votación: 📋
 
 En la primera votación salieron 2 reñidos finalistas entre 'cuadrado' y 'acuarelaAmarilla' por lo que se llegó a la conclusión de hacer una fusión entre ambos logos, dando lugar de este modo al origen de 'acuarelaNegra' y 'acuarelaNegraRosa' como leve alternativa.
+
+
 
 ## Segunda votación: 📋
 
@@ -33,9 +39,14 @@ Se utilizaron las siguientes fuentes extraídas de Google Fonts (https://fonts.g
 
 Se utilizaron los siguientes tonos de color extraídos de la paleta de Photoshop:
 
-* [TonoNegro](#000000) ;
-* [TonoRosa](rgb(228, 119, 119)) ;
-* [TonoBlanco](#ffffff)) ;
+* [TonoNegro](#000000) 
+* [URL] (https://colorate.azurewebsites.net/SwatchColor/000000);
+* [TonoRosa](rgb 228, 119, 119 ) 
+
+* [URL] (https://www.colorhexa.com/e47777.png) ;
+* [TonoBlanco](#ffffff)) 
+
+* [URL] (data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABODcYhAAEl463hAAAAAElFTkSuQmCC);
 
 ## Imágenes utilizadas 📖
 
