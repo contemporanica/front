@@ -6,9 +6,7 @@ A continuación se va a documentar el proceso de creación del logo de la págin
 
 Empezamos creando 3 logos para tener donde elegir: 'acuarelaAmarilla', 'cuadrado' y 'azul'. A partir de entonces, se iniciariaron las votaciones pertinentes hasta filtrar y llegar al acabado final que quedó lejos de las ideas iniciales anteriormente mencionadas.
 
-![docs\materialGrafico\logosDescartados\acuarelaAmarilla.png] 
-![C:\Users\Paula\Desktop\2_DAW\APP\front\docs\materialGrafico\logosDescartados\azul.png]
-![C:\Users\Paula\Desktop\2_DAW\APP\front\docs\materialGrafico\logosDescartados\cuadrado.png]
+
 
 
 ### Primera votación: 📋
