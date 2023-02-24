@@ -1,15 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
 
-
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
-
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw0aXpsog.woff2)
-}
 
 #container{
     display: flex;
@@ -36,6 +25,9 @@
 }
 
 h1{
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +39,6 @@ h1{
     padding: 10px 50px;
     text-align: center;
     font-size: 45px;
-    font-family: 'Montserrat';
     color: rgb(246, 242, 242);
     font-weight: 300;
     letter-spacing: 0.2px;
