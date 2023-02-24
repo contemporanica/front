@@ -24,4 +24,4 @@ Para construir el contenedor se ha usado el comando `docker build -t front .` , 
 
 ## Iniciar el contenedor con el front de la aplicación web
 
-Para poder ver nuestra página funcionando se descarga el contenedor escribiendo en consola `docker run -d -it -p 8000:80 front`. Una vez descargado el contenedor, se podrá acceder a él en la dirección [front](http://localhost:8000/).
+Para poder ver nuestra página funcionando se descarga el contenedor escribiendo en consola `docker run -d -it -p 80:80 front`. Una vez descargado el contenedor, se podrá acceder a él en la dirección [front](http://localhost:80/).
