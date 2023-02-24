@@ -29,15 +29,25 @@ Finalmente se llegó a la unánime decisión de redondear el logo 'cuadrado' par
 Se utilizaron las siguientes fuentes extraídas de Google Fonts (https://fonts.google.com/):
 
 * [TextoBásico](<style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');</style>) - font-family: 'Montserrat', sans-serif;
-* [TextoBásicoEnNegrita](<style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');</style>) - font-family: 'Montserrat', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap%22');</style>)
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+
 * [Título](<style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=News+Cycle&display=swap');</style>) - font-family: 'Montserrat', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat:wght@300;700&family=News+Cycle&family=Ruda:wght@400;600&display=swap'); 
+
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 
 ## Colores 🛠️
 
-Se utilizaron los siguientes tonos de color extraídos de la paleta de Photoshop:
+Se utilizaron los siguientes tonos de color extraídos de la paleta de Photoshop CS 19:
 
 * [TonoNegro](#000000) 
 * [URL] (https://colorate.azurewebsites.net/SwatchColor/000000);
