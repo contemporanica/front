@@ -19,82 +19,73 @@
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-black"
-      aria-label="Offcanvas navbar large"
-    >
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black " aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a href="#">
-          <img
-            src="../../materialGrafico/logosimplificado.png"
-            width="90"
-            height="90"
-            alt="Logo"
-          />
-        </a>
-        <a class="navbar-brand" href="#">Contemporanica</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar2"
-          aria-controls="offcanvasNavbar2"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasNavbar2"
-          aria-labelledby="offcanvasNavbar2Label"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
-              Contemporanica
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+          <a href="../index/indice.html">
+              <img src="../../materialGrafico/logosimplificado.png" width="90" height="90" alt="Logo" />
+          </a>
+          <a class="navbar-brand" href="../index/indice.html">Contemporanica</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+              aria-controls="offcanvasNavbar2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+              aria-labelledby="offcanvasNavbar2Label">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Contemporanica</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../index/indice.html">Inicio</a>
+                      </li>
+
+                      <!-- SI ESTA LOGEADO 
+
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="../perfil/perfil.html" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Perfil
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../perfil/perfil.html">Editar perfil</a></li>
+                              <li><a class="dropdown-item" href="../pagina-editar-borrar/editar-borrar.html">Mis piezas</a></li>
+                              <li>
+                                  <hr class="dropdown-divider" />
+                              </li>
+                              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="../subir-pieza/subir-pieza.html">Subir pieza</a>
+                      </li>
+
+                      -->
+
+                      <!-- TANTO SI ESTA O NO ESTA LOGEADO -->
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="../buscador/busqueda.html">Buscar piezas</a>
+                      </li>
+
+
+                      <!-- SI NO ESTA LOGEADO -->
+                      <li class="nav-item">
+                          <a class="nav-link" href="../login/login.html">Iniciar sesión</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../registro/registro.html">Registrarme</a>
+                      </li>
+
+                  </ul>
+
+              </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index/indice.html"
-                  >Inicio</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="../buscador/busqueda.html"
-                  >Busca piezas</a
-                >
-              </li>
-
-              <!-- SI NO ESTA LOGEADO -->
-              <li class="nav-item">
-                <a class="nav-link" href="../login/login.html"
-                  >Iniciar sesion</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../registro/registro.html"
-                  >Registrarme</a
-                >
-              </li>
-              <!-- SI NO ESTA LOGEADO -->
-
-              <!-- SI ESTA LOGEADO -->
-
-              <!-- SI ESTA LOGEADO -->
-            </ul>
-          </div>
-        </div>
       </div>
     </nav>
 
@@ -207,7 +198,10 @@
                     </td>
                     <td>Concierto de Aranjuez</td>
                     <td>1939</td>
-                    <td>Guitarra, orquesta</td>
+                    <td>Violonchelo, Contrabajo</td>
+                    <td>
+                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -216,7 +210,10 @@
                     </td>
                     <td>Las Cuatro Estaciones</td>
                     <td>1725</td>
-                    <td>Violín, orquesta</td>
+                    <td>Violin, Clavicordio</td>
+                    <td>
+                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -225,7 +222,10 @@
                     </td>
                     <td>Sonata para piano nº 14</td>
                     <td>1801</td>
-                    <td>Piano</td>
+                    <td>Piano, Tuba</td>
+                    <td>
+                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -234,7 +234,10 @@
                     </td>
                     <td>La Traviata</td>
                     <td>1853</td>
-                    <td>Orquesta, coro</td>
+                    <td>Clavicordio, Trompeta</td>
+                    <td>
+                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -243,7 +246,10 @@
                     </td>
                     <td>Sinfonía nº 5</td>
                     <td>1808</td>
-                    <td>Orquesta</td>
+                    <td>Trompeta</td>
+                    <td>
+                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -252,13 +258,62 @@
                     </td>
                     <td>Concierto para piano nº 2</td>
                     <td>1830</td>
-                    <td>Piano, orquesta</td>
+                    <td>Piano, Saxofon</td>
+                    <td>
+                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </section>
           </div>
         </div>
+      </div>
+    </div>
+
+
+    <!-- Modal para ver detalles de la pieza -->
+    <div class="modal fade" id="verPiezaModal" tabindex="-1" aria-labelledby="verPiezaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="verPiezaModalLabel"><strong>Información de la pieza músical</strong></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+  
+              <div class="mb-3">
+                  <p><strong>Título: </strong>La Traviata</p>
+              </div>
+  
+              <div class="mb-3">
+                  <p><strong>Compositor: </strong> Giuseppe Verdi</p>
+              </div>
+  
+              <div class="mb-3">
+                  <p><strong>Descripción:</strong></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam aperiam soluta consectetur ratione 
+                      at id obcaecati, asperiores aut, recusandae debitis vitae dolores qui quidem suscipit quis explicabo, 
+                      nemo fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero perferendis nulla quibusdam 
+                      nam labore! Aut praesentium voluptatem nesciunt inventore dolor nihil id ullam ea, quisquam ipsam qui animi 
+                      amet temporibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint repudiandae debitis, amet 
+                      illo minus culpa, possimus voluptatem facere expedita id harum doloribus quibusdam? Id suscipit aliquid quibusdam, 
+                      voluptatem harum velit.</p>
+              </div>
+              <div class="mb-3">
+                  <p><strong>Instrumentos: </strong> Clavicordio, Trompeta</p>
+                  
+              </div>
+              <div class="mb-3">
+                  <p><strong>Fecha de publicación: </strong> 2023-02-24</p>
+                  
+              </div>
+  
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+          </div>
       </div>
     </div>
 
