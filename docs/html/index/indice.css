@@ -1,12 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
 
-
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
-
-@font-face{
-    font-family:'Raleway', sans-serif;
-    src: url("https://fonts.googleapis.com/css?family=Raleway:300,400");
-}
 
 #container{
     display: flex;
@@ -33,6 +25,9 @@
 }
 
 h1{
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +39,6 @@ h1{
     padding: 10px 50px;
     text-align: center;
     font-size: 45px;
-    font-family: 'Raleway';
     color: rgb(246, 242, 242);
     font-weight: 300;
     letter-spacing: 0.2px;
