@@ -1,0 +1,70 @@
+<div
+  class="modal modal-signin position-static d-block bg-secondary py-5"
+  tabindex="-1"
+  role="dialog"
+  id="modalSignin"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <h1 class="fw-bold mb-0 login texto-rosa">Identifícate</h1>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <!-- Con formGroup da nombre al formulario para saber su estado -->
+        <form class="" (ngSubmit)="submit()" [formGroup]="formUser" action=""> 
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control rounded-3"
+              id="floatingInput"
+              name="email"
+              placeholder="name@example.com"
+              formControlName="email"
+            />
+            <label for="floatingInput">Email </label>
+            <!-- Div para mostrar errores -->
+            <div class="text-danger mt-2 fs-6" [hidden]="email.valid || email.pristine">
+              <span *ngIf="email.errors?.['required']">
+                El email es obligatorio
+              </span>
+
+              <span *ngIf="email.errors?.['email']">
+                Escriba un email válido
+              </span>
+            </div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control rounded-3"
+              id="floatingPassword"
+              name="pass"
+              placeholder="Password"
+              formControlName="pass"
+            />
+            <label for="floatingPassword">Contraseña</label>
+            <!-- Div para mostrar errores -->
+            <div class="text-danger mt-2 fs-6 error" [hidden]="pass.invalid || !pass.pristine">La contraseña es obligatorio</div>
+          </div>
+
+          <button
+            class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+            type="submit"
+            [disabled]="formUser.invalid" 
+          >
+            Enviar
+          </button>
+
+          <div>
+            <a href="registro.html" class="texto-rosa">
+              ¿No tienes cuenta? Registrate aquí</a
+            >
+          </div>
+        </form>
+      </div><!-- Fin modal formulario -->
+    </div>
+  </div> <!-- Fin modal titulo -->
+</div> <!-- Fin modal -->
+
