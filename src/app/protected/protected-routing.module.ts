@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { MySheetsComponent } from './pages/my-sheets/my-sheets.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { SearchComponent } from './pages/search/search.component';
+import { SearchComponent } from '../shared/search/search.component';
 
 const routes: Routes = [
   {

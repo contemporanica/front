@@ -25,7 +25,7 @@
       html {
           min-height: 100%;
         }
-        
+
         body {
           display: flex;
           flex-direction: column;
@@ -33,11 +33,11 @@
           font-family: 'Bitter', serif;
 
         }
-        
+
         .content {
           flex: 1;
         }
-        
+
         .footer {
           flex-shrink: 0;
           min-height: 100px;
@@ -68,7 +68,7 @@
                           <a class="nav-link" aria-current="page" href="../index/indice.html">Inicio</a>
                       </li>
 
-                      <!-- SI ESTA LOGEADO 
+                      <!-- SI ESTA LOGEADO
 
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="../perfil/perfil.html" role="button" data-bs-toggle="dropdown"
@@ -114,7 +114,7 @@
     </nav>
 
     <div class="container my-5 content">
-      <div class="card">
+      <div class="card mt-5">
         <form>
           <!-- HEADER -->
           <div class="card-header py-4 px-5 bg-light border-0">
@@ -184,13 +184,13 @@
 
           <!-- FOOTER -->
           <div class="card-footer text-end py-3 px-5 bg-light border-0">
-            <button class="btn btn-dark btn-rounded">Aplicar</button>
+            <a href="resultado.html" class="btn btn-dark btn-rounded">Aplicar</a>
           </div>
         </form>
       </div>
 
 
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-header py-4 px-5 bg-light border-0">
           <h4 class="mb-0 fw-bold">Resultados</h4>
         </div>
@@ -292,57 +292,10 @@
             </section>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
 
-
-    <!-- Modal para ver detalles de la pieza -->
-    <div class="modal fade" id="verPiezaModal" tabindex="-1" aria-labelledby="verPiezaModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="verPiezaModalLabel"><strong>Información de la pieza músical</strong></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-          </div>
-          <div class="modal-body">
-  
-              <div class="mb-3">
-                  <p><strong>Título: </strong>La Traviata</p>
-              </div>
-  
-              <div class="mb-3">
-                  <p><strong>Compositor: </strong> Giuseppe Verdi</p>
-              </div>
-  
-              <div class="mb-3">
-                  <p><strong>Descripción:</strong></p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam aperiam soluta consectetur ratione 
-                      at id obcaecati, asperiores aut, recusandae debitis vitae dolores qui quidem suscipit quis explicabo, 
-                      nemo fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero perferendis nulla quibusdam 
-                      nam labore! Aut praesentium voluptatem nesciunt inventore dolor nihil id ullam ea, quisquam ipsam qui animi 
-                      amet temporibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint repudiandae debitis, amet 
-                      illo minus culpa, possimus voluptatem facere expedita id harum doloribus quibusdam? Id suscipit aliquid quibusdam, 
-                      voluptatem harum velit.</p>
-              </div>
-              <div class="mb-3">
-                  <p><strong>Instrumentos: </strong> Clavicordio, Trompeta</p>
-                  
-              </div>
-              <div class="mb-3">
-                  <p><strong>Fecha de publicación: </strong> 2023-02-24</p>
-                  
-              </div>
-  
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-          </div>
-      </div>
-    </div>
-
-
-    <footer class="footer d-flex flex-wrap justify-content-between align-items-center py-3 p-5 bg-black">
+    <footer class="footer d-flex flex-wrap justify-content-between align-items-center px-5 bg-black">
       <div class="col-md-4 d-flex align-items-center">
           <span class="mb-3 mb-md-0 texto-rosa ">© 2023 Contemporanica</span>
       </div>
