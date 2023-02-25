@@ -20,94 +20,139 @@
 
   <body>
     <style>
+      /* universal para todas las paginas */
       html {
-          min-height: 100%;
+        min-height: 100%;
+      }
+    
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Bitter', serif;
+    
+      }
+    
+      .background-image {
+        background-image: url("../img/partituraFondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        filter: blur(3px);
+      }
+    
+      .content {
+        flex: 1;
+      }
+    
+      .offcanvas-body .dropdown-item:active {
+        background-color: rgb(228, 228, 228);
+        color: black;
+      }
+    
+      .footer {
+        flex-shrink: 0;
+        min-height: 100px;
+      }
+    
+      .texto-rosa {
+        color: #e47777;
+      }
+    
+      a.texto-rosa:hover {
+        color: white;
+      }
+    
+    
+      @media (max-width: 374px) {
+        .navbar-brand {
+          font-size: 18px;
         }
-        
-        body {
-          display: flex;
-          flex-direction: column;
-          min-height: 100vh;
-          font-family: 'Bitter', serif;
-
+    
+      }
+    
+      @media (max-width: 354px) {
+        .navbar-brand {
+          font-size: 14px;
         }
-        
-        .content {
-          flex: 1;
-        }
-        
-        .footer {
-          flex-shrink: 0;
-          min-height: 100px;
-        }
-  </style>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black " aria-label="Offcanvas navbar large">
-      <div class="container-fluid">
-          <a href="../index/indice.html">
-              <img src="../../materialGrafico/logosimplificado.png" width="90" height="90" alt="Logo" />
-          </a>
-          <a class="navbar-brand" href="../index/indice.html">CONTEMPORANICA</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-              aria-controls="offcanvasNavbar2">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
-              aria-labelledby="offcanvasNavbar2Label">
-              <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label">CONTEMPORANICA</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                      aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      }
+    
+      /* --- */
+    </style>
 
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="../index/indice.html">Inicio</a>
-                      </li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black " aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+        <a href="../index/indice.html">
+            <img src="../../materialGrafico/logosimplificado.png" width="90" height="90" alt="Logo" />
+        </a>
+        <a class="navbar-brand" href="../index/indice.html">CONTEMPORANICA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbar2Label">CONTEMPORANICA</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
-                      <!-- SI ESTA LOGEADO -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index/indice.html">Inicio</a>
+                    </li>
 
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="../perfil/perfil.html" role="button" data-bs-toggle="dropdown"
-                              aria-expanded="false">
-                              Perfil
-                          </a>
-                          <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="../perfil/perfil.html">Editar perfil</a></li>
-                              <li><a class="dropdown-item" href="../pagina-editar-borrar/editar-borrar.html">Mis piezas</a></li>
-                              <li>
-                                  <hr class="dropdown-divider" />
-                              </li>
-                              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                          </ul>
-                      </li>
+                    <!-- SI ESTA LOGEADO -->
 
-                      <li class="nav-item">
-                          <a class="nav-link" href="../subir-pieza/subir-pieza.html">Subir pieza</a>
-                      </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../perfil/perfil.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perfil
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../perfil/perfil.html">Editar perfil</a></li>
+                            <li><a class="dropdown-item" href="../pagina-editar-borrar/editar-borrar.html">Mis piezas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item logout-item" href="#" style="color: red; font-weight: bold;">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
 
-                      <!-- TANTO SI ESTA O NO ESTA LOGEADO -->
-
-                      <li class="nav-item">
-                          <a class="nav-link" href="../buscador/busqueda.html">Buscar piezas</a>
-                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../subir-pieza/subir-pieza.html">Subir pieza</a>
+                    </li>
 
 
-                      <!-- SI NO ESTA LOGEADO 
-                      <li class="nav-item">
-                          <a class="nav-link" href="../login/login.html">Iniciar sesión</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="../registro/registro.html">Registrarme</a>
-                      </li>
-                      -->
-                  </ul>
-              </div>
-          </div>
-      </div>
-    </nav>
+                    <!-- TANTO SI ESTA O NO ESTA LOGEADO -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../buscador/busqueda.html">Buscar piezas</a>
+                    </li>
 
 
+                    <!-- SI NO ESTA LOGEADO 
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login/login.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../registro/registro.html">Registrarme</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+
+    <div class="background-image"></div>
 
     <div class="container my-5 content">
       <div class="card">
