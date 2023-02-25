@@ -5,51 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Búsqueda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <!-- ARCHIVOS NECESARIOS PARA EL SELECTOR DE INSTRUMENTOS -->
-    <link rel="stylesheet" href="multi-select-tag.css" />
-    <script src="multi-select-tag.js"></script>
-    <link rel="stylesheet" href="resultados.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <!-- ARCHIVOS NECESARIOS PARA EL SELECTOR DE INSTRUMENTOS -->
+    <link rel="stylesheet" href="css/multi-select-tag.css" />
+    <script src="js/multi-select-tag.js"></script>
   </head>
 
   <body>
-
-    <style>
-      html {
-          min-height: 100%;
-        }
-
-        body {
-          display: flex;
-          flex-direction: column;
-          min-height: 100vh;
-          font-family: 'Bitter', serif;
-
-        }
-
-        .content {
-          flex: 1;
-        }
-
-        .footer {
-          flex-shrink: 0;
-          min-height: 100px;
-        }
-      </style>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-black " aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-          <a href="../index/indice.html">
-              <img src="../../materialGrafico/logosimplificado.png" width="90" height="90" alt="Logo" />
+          <a href="index.html">
+              <img src="img/logosimplificado.png" width="90" height="90" alt="Logo" />
           </a>
-          <a class="navbar-brand" href="../index/indice.html">CONTEMPORANICA</a>
+          <a class="navbar-brand" href="index.html">CONTEMPORANICA</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
               aria-controls="offcanvasNavbar2">
               <span class="navbar-toggler-icon"></span>
@@ -63,58 +39,46 @@
               </div>
               <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
                       <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="../index/indice.html">Inicio</a>
+                          <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                       </li>
-
-                      <!-- SI ESTA LOGEADO
-
+                      <!-- SI ESTA LOGEADO -->
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="../perfil/perfil.html" role="button" data-bs-toggle="dropdown"
+                          <a class="nav-link dropdown-toggle" href="perfil.html" role="button" data-bs-toggle="dropdown"
                               aria-expanded="false">
                               Perfil
                           </a>
                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="../perfil/perfil.html">Editar perfil</a></li>
-                              <li><a class="dropdown-item" href="../pagina-editar-borrar/editar-borrar.html">Mis piezas</a></li>
+                              <li><a class="dropdown-item" href="perfil.html">Editar perfil</a></li>
+                              <li><a class="dropdown-item" href="mis-piezas.html">Mis piezas</a></li>
                               <li>
                                   <hr class="dropdown-divider" />
                               </li>
                               <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                           </ul>
                       </li>
-
                       <li class="nav-item">
-                          <a class="nav-link" href="../subir-pieza/subir-pieza.html">Subir pieza</a>
+                          <a class="nav-link" href="subir-pieza.html">Subir pieza</a>
                       </li>
-
-                      -->
-
                       <!-- TANTO SI ESTA O NO ESTA LOGEADO -->
-
                       <li class="nav-item">
-                          <a class="nav-link" href="../buscador/busqueda.html">Buscar piezas</a>
+                          <a class="nav-link" href="busqueda.html">Buscar piezas</a>
                       </li>
-
-
                       <!-- SI NO ESTA LOGEADO -->
                       <li class="nav-item">
-                          <a class="nav-link" href="../login/login.html">Iniciar sesión</a>
+                          <a class="nav-link" href="login.html">Iniciar sesión</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="../registro/registro.html">Registrarme</a>
+                          <a class="nav-link" href="registro.html">Registrarme</a>
                       </li>
-
                   </ul>
-
               </div>
           </div>
       </div>
-    </nav>
+  </nav>
 
-    <div class="container my-5 content">
-      <div class="card mt-5">
+    <div class="container-lg mb-4 mx-auto">
+      <div class="card my-4">
         <form>
           <!-- HEADER -->
           <div class="card-header py-4 px-5 bg-light border-0">
@@ -184,13 +148,13 @@
 
           <!-- FOOTER -->
           <div class="card-footer text-end py-3 px-5 bg-light border-0">
-            <a href="resultado.html" class="btn btn-dark btn-rounded">Aplicar</a>
+            <button type="submit" class="btn btn-dark btn-rounded">Aplicar</button>
           </div>
         </form>
       </div>
 
 
-      <!-- <div class="card">
+      <div class="card">
         <div class="card-header py-4 px-5 bg-light border-0">
           <h4 class="mb-0 fw-bold">Resultados</h4>
         </div>
@@ -217,74 +181,74 @@
                 <tbody>
                   <tr>
                     <td>
-                      <a href="#"><img src="images/Zinzu Chan Lee.jpg" /></a>
-                      Joaquín Rodrigo
+                      <img class="img-fluid w-25 h-25" src="img/Zinzu Chan Lee.jpg"/>
+                      <p>Joaquín Rodrigo</p>
                     </td>
                     <td>Concierto de Aranjuez</td>
                     <td>1939</td>
                     <td>Violonchelo, Contrabajo</td>
                     <td>
-                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                      <a href="resultado.html" class="text-decoration-none">Ver</a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="#"><img src="images/Jeet Saru.jpg" /></a>Antonio
-                      Vivaldi
+                      <img class="img-fluid w-25 h-25" src="img/Jeet Saru.jpg"/>
+                      <p>Antonio Vivaldi</p>
                     </td>
                     <td>Las Cuatro Estaciones</td>
                     <td>1725</td>
                     <td>Violin, Clavicordio</td>
                     <td>
-                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                      <a href="resultado.html" class="text-decoration-none">Ver</a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="#"><img src="images/Sonal Gharti.jpg" /></a>
-                      Ludwig van Beethoven
+                      <img class="img-fluid w-25 h-25" src="img/Sonal Gharti.jpg"/>
+                      <p>Ludwig van Beethoven</p>
                     </td>
                     <td>Sonata para piano nº 14</td>
                     <td>1801</td>
                     <td>Piano, Tuba</td>
                     <td>
-                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                      <a href="resultado.html" class="text-decoration-none">Ver</a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="#"><img src="images/Alex Gonley.jpg" /></a>
-                      Giuseppe Verdi
+                      <img class="img-fluid w-25 h-25" src="img/Alex Gonley.jpg"/>
+                      <p>Giuseppe Verdi</p>
                     </td>
                     <td>La Traviata</td>
                     <td>1853</td>
                     <td>Clavicordio, Trompeta</td>
                     <td>
-                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                      <a href="resultado.html" class="text-decoration-none">Ver</a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="#"><img src="images/Alson GC.jpg" /></a> Ludwig
-                      van Beethoven
+                      <img class="img-fluid w-25 h-25" src="img/Alson GC.jpg"/>
+                      <p>Ludwig van Beethoven</p>
                     </td>
                     <td>Sinfonía nº 5</td>
                     <td>1808</td>
                     <td>Trompeta</td>
                     <td>
-                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                      <a href="resultado.html" class="text-decoration-none">Ver</a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="#"><img src="images/Sarita Limbu.jpg" /></a>
-                      Fryderyk Chopin
+                      <img class="img-fluid w-25 h-25" src="img/Sarita Limbu.jpg"/>
+                      <p>Fryderyk Chopin</p>
                     </td>
                     <td>Concierto para piano nº 2</td>
                     <td>1830</td>
                     <td>Piano, Saxofon</td>
                     <td>
-                      <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#verPiezaModal">Ver</a>
+                      <a href="resultado.html" class="text-decoration-none">Ver</a>
                     </td>
                   </tr>
                 </tbody>
@@ -292,32 +256,26 @@
             </section>
           </div>
         </div>
-      </div>-->
+      </div>
     </div>
 
-    <footer class="footer d-flex flex-wrap justify-content-between align-items-center px-5 bg-black">
-      <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 texto-rosa ">© 2023 Contemporanica</span>
-      </div>
+    <footer>
+      <div class="d-flex flex-wrap justify-content-between px-5 bg-black">
+        <span class="texto-rosa pt-3">© 2023 Contemporanica</span>
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <ul class="d-flex list-unstyled pt-3">
           <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-twitter"></i></a></li>
           <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-instagram"></i></a></li>
           <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-facebook"></i></a></li>
           <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-linkedin"></i></a></li>
-      </ul>
-  </footer>
+        </ul>
+      </div>
+    </footer>
 
     <script>
       new MultiSelectTag("instrumentos");
     </script>
 
-    <script src="resultados.js"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
