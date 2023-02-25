@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ver pieza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+
+    <style>
+        /* universal para todas las paginas */
+        html {
+          min-height: 100%;
+        }
+      
+        body {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          font-family: 'Bitter', serif;
+      
+        }
+      
+        .background-image {
+          background-image: url("../img/partituraFondo.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          opacity: 0.7;
+          filter: blur(3px);
+        }
+      
+        .content {
+          flex: 1;
+        }
+      
+        .offcanvas-body .dropdown-item:active {
+          background-color: rgb(228, 228, 228);
+          color: black;
+        }
+      
+        .footer {
+          flex-shrink: 0;
+          min-height: 100px;
+        }
+      
+        .texto-rosa {
+          color: #e47777;
+        }
+      
+        a.texto-rosa:hover {
+          color: white;
+        }
+      
+        @media (max-width: 374px) {
+          .navbar-brand {
+            font-size: 18px;
+          }
+      
+        }
+      
+        @media (max-width: 354px) {
+          .navbar-brand {
+            font-size: 14px;
+          }
+        }
+      
+        /* --- */
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black " aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+            <a href="../index/indice.html">
+                <img src="../../materialGrafico/logosimplificado.png" width="90" height="90" alt="Logo" />
+            </a>
+            <a class="navbar-brand" href="../index/indice.html">CONTEMPORANICA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">CONTEMPORANICA</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index/indice.html">Inicio</a>
+                        </li>
+
+                        <!-- SI ESTA LOGEADO 
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../perfil/perfil.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Perfil
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../perfil/perfil.html">Editar perfil</a></li>
+                                <li><a class="dropdown-item" href="../pagina-editar-borrar/editar-borrar.html">Mis piezas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item logout-item" href="#" style="color: red; font-weight: bold;">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../subir-pieza/subir-pieza.html">Subir pieza</a>
+                        </li>
+                        -->
+
+                        <!-- TANTO SI ESTA O NO ESTA LOGEADO -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../buscador/busqueda.html">Buscar piezas</a>
+                        </li>
+
+
+                        <!-- SI NO ESTA LOGEADO -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../login/login.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../registro/registro.html">Registrarme</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <div class="background-image"></div>
+
+  <div class="content"></div>
+
+  <div class="content">
+
+    <div class="container my-5">
+        <div class="card col-md-6 mx-auto">
+  
+            <!-- HEADER -->
+            <div class="card-header py-4 px-4 bg-light border-0">
+              <h4 class="mb-0 fw-bold">Información de la pieza</h4>
+            </div>
+  
+            <!-- BODY -->
+            <div class="card-body px-4">
+              <!-- INFO PIEZA -->
+              <div class="row gx-xl-5">
+                <div class="col-md-12">
+                  <h5>Título</h5>
+                  <p class="text-muted">
+                    La Traviata
+                  </p>
+                </div>
+  
+              </div>
+
+              <div class="row gx-xl-5">
+                <div class="col-md-12">
+                  <h5>Compositor</h5>
+                  <p class="text-muted">
+                    Giuseppe Verdi
+                  </p>
+                </div>
+  
+              </div>
+
+              <div class="row gx-xl-5">
+                <div class="col-md-12">
+                  <h5>Descripción</h5>
+                  <p class="text-muted">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque accusamus voluptatibus nobis at veritatis perspiciatis dolores vitae velit! Ad alias at rem pariatur aliquid ducimus temporibus voluptas voluptatem delectus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate vero quo. Alias deleniti nihil officiis sunt animi officia, voluptatem soluta. Saepe beatae aspernatur pariatur, dolorem hic deserunt delectus alias.
+                  </p>
+                </div>
+  
+              </div>
+
+              <div class="row gx-xl-5">
+                <div class="col-md-12">
+                  <h5>Instrumentos:</h5>
+                  <p class="text-muted">
+                    Clavicordio, Trompeta
+                  </p>
+                </div>
+  
+              </div>
+
+              <div class="row gx-xl-5">
+                <div class="col-md-12">
+                  <h5>Fecha de publicación:</h5>
+                  <p class="text-muted">
+                    2023-02-25
+                  </p>
+                </div>
+  
+              </div>
+
+            </div>
+            
+        </div>
+      </div>
+
+    </div>
+
+
+    <footer class="footer d-flex flex-wrap justify-content-between align-items-center px-5 bg-black">
+      <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 texto-rosa ">© 2023 Contemporanica</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="ms-3"><a class="texto-rosa" href="#"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,61 +1,14 @@
+/* universal para todas las paginas */
+html {
+    min-height: 100%;
+}
 
-
-#container{
+body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    height: 100%;
-    background-size: cover;
-    
-}
+    min-height: 100vh;
+    font-family: 'Bitter', serif;
 
-#partitura{
-    box-shadow: 30px 40px 75px #222;
-    filter:blur(3px);
-}
-
-#logoRect{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-h1{
-
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    top: 130px;
-    background: rgba(0,0,0,0.5);
-    padding: 10px 50px;
-    text-align: center;
-    font-size: 45px;
-    color: rgb(246, 242, 242);
-    font-weight: 300;
-    letter-spacing: 0.2px;
-    transition: all 1.5s ease-out;    
-    border-radius: 25px;
-}
-
-#logoRect:hover{
-    backface-visibility: hidden;
-        transform: scale(1.3, 1.3);
-        opacity: 1;
-        transition: all 0.9s ease-out;
-        
-}
-
-#titulo{
-    color: rgb(246, 242, 242);
 }
 
 .background-image {
@@ -68,12 +21,88 @@ h1{
     z-index: -1;
     opacity: 0.7;
     filter: blur(3px);
-    margin-top: -110px;
+}
+
+.content {
+    flex: 1;
+}
+
+.offcanvas-body .dropdown-item:active {
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+.footer {
+    flex-shrink: 0;
+    min-height: 100px;
 }
 
 .texto-rosa {
     color: #e47777;
 }
+
 a.texto-rosa:hover {
     color: white;
 }
+
+
+@media (max-width: 374px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 354px) {
+    .navbar-brand {
+        font-size: 14px;
+    }
+}
+
+/* --- */
+
+/* --- css solo para esta pagina  */
+
+.img-container {
+
+    max-width: 80%;
+    animation-name: heartbeat;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* efecto de latido de la imagen */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#titulo {
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(246, 242, 242);
+    border-radius: 25px;
+    margin-bottom: 150px;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+
+    transform: scale(0.5);
+    /* Escala inicial del título */
+    transition: transform 1.5s ease-in-out;
+    /* Duración de la transición */
+
+}
+

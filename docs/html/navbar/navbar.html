@@ -11,12 +11,31 @@
 </head>
 
 <body>
+    <style>
+        @media (max-width: 374px) {
+            .navbar-brand {
+                font-size: 18px;
+            }
+    
+        }
+    
+        @media (max-width: 354px) {
+            .navbar-brand {
+                font-size: 14px;
+            }
+        }
+    
+        .offcanvas-body .dropdown-item:active {
+            background-color: rgb(228, 228, 228);
+            color: black;
+        }
+    </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black " aria-label="Offcanvas navbar large">
         <div class="container-fluid">
             <a href="../index/indice.html">
                 <img src="../../materialGrafico/logosimplificado.png" width="90" height="90" alt="Logo" />
             </a>
-            <a class="navbar-brand" href="../index/indice.html">Contemporanica</a>
+            <a class="navbar-brand" href="../index/indice.html">CONTEMPORANICA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
                 aria-controls="offcanvasNavbar2">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +43,7 @@
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
                 aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Contemporanica</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">CONTEMPORANICA</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -48,7 +67,7 @@
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
-                                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                <li><a class="dropdown-item logout-item" href="#" style="color: red; font-weight: bold;">Cerrar sesión</a></li>
                             </ul>
                         </li>
 
