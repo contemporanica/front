@@ -1,1 +1,138 @@
-<p>my-sheets works!</p>
+<div class="container-lg my-5">
+
+  <div class="card">
+    <div class="card-header py-4 px-5 bg-light border-0">
+      <h4 class="mb-0 fw-bold">Mis piezas</h4>
+    </div>
+
+    <div class="card-body px-5">
+      <section>
+        <div class="input-group">
+          <input class="form-control" type="search" placeholder="Buscar" />
+        </div>
+      </section>
+
+      <div class="table-responsive">
+        <section class="table__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Titulo</th>
+                <th>Fecha</th>
+                <th>Instrumentos</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Concierto de Aranjuez</td>
+                <td>1939</td>
+                <td>Violonchelo, Contrabajo</td>
+                <td>
+                  <a href="resultado.html" class="text-decoration-none text-dark">Ver</a> |
+                  <a href="editar-pieza.html" class="text-decoration-none text-dark">Editar</a> |
+                  <a href="#" class="text-decoration-none text-danger">Eliminar</a>
+              </td>
+              </tr>
+              <tr>
+                <td>Las Cuatro Estaciones</td>
+                <td>1725</td>
+                <td>Violin, Clavicordio</td>
+                <td>
+                  <a href="resultado.html" class="text-decoration-none text-dark">Ver</a> |
+                  <a href="editar-pieza.html" class="text-decoration-none text-dark">Editar</a> |
+                  <a href="#" class="text-decoration-none text-danger">Eliminar</a>
+              </td>
+              </tr>
+              <tr>
+                <td>Sonata para piano nº 14</td>
+                <td>1801</td>
+                <td>Piano, Tuba</td>
+                <td>
+                  <a href="resultado.html" class="text-decoration-none text-dark">Ver</a> |
+                  <a href="editar-pieza.html" class="text-decoration-none text-dark">Editar</a> |
+                  <a href="#" class="text-decoration-none text-danger">Eliminar</a>
+              </td>
+              </tr>
+              <tr>
+                <td>La Traviata</td>
+                <td>1853</td>
+                <td>Clavicordio, Trompeta</td>
+                <td>
+                  <a href="resultado.html" class="text-decoration-none text-dark">Ver</a> |
+                  <a href="editar-pieza.html" class="text-decoration-none text-dark">Editar</a> |
+                  <a href="#" class="text-decoration-none text-danger">Eliminar</a>
+              </td>
+              </tr>
+              <tr>
+                <td>Sinfonía nº 5</td>
+                <td>1808</td>
+                <td>Trompeta</td>
+                <td>
+                  <a href="resultado.html" class="text-decoration-none text-dark">Ver</a> |
+                  <a href="editar-pieza.html" class="text-decoration-none text-dark">Editar</a> |
+                  <a href="#" class="text-decoration-none text-danger">Eliminar</a>
+              </td>
+              </tr>
+              <tr>
+                <td>Concierto para piano nº 2</td>
+                <td>1830</td>
+                <td>Piano, Saxofon</td>
+                <td>
+                  <a href="resultado.html" class="text-decoration-none text-dark">Ver</a> |
+                  <a href="editar-pieza.html" class="text-decoration-none text-dark">Editar</a> |
+                  <a href="#" class="text-decoration-none text-danger">Eliminar</a>
+              </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para ver detalles de la pieza -->
+<div class="modal fade" id="verPiezaModal" tabindex="-1" aria-labelledby="verPiezaModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+  <div class="modal-header">
+      <h5 class="modal-title" id="verPiezaModalLabel"><strong>Información de la pieza músical</strong></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+  </div>
+  <div class="modal-body">
+
+      <div class="mb-3">
+          <p><strong>Título: </strong>La Traviata</p>
+      </div>
+
+      <div class="mb-3">
+          <p><strong>Compositor: </strong> Giuseppe Verdi</p>
+      </div>
+
+      <div class="mb-3">
+          <p><strong>Descripción:</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam aperiam soluta consectetur ratione
+              at id obcaecati, asperiores aut, recusandae debitis vitae dolores qui quidem suscipit quis explicabo,
+              nemo fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero perferendis nulla quibusdam
+              nam labore! Aut praesentium voluptatem nesciunt inventore dolor nihil id ullam ea, quisquam ipsam qui animi
+              amet temporibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint repudiandae debitis, amet
+              illo minus culpa, possimus voluptatem facere expedita id harum doloribus quibusdam? Id suscipit aliquid quibusdam,
+              voluptatem harum velit.</p>
+      </div>
+      <div class="mb-3">
+          <p><strong>Instrumentos: </strong> Clavicordio, Trompeta</p>
+
+      </div>
+      <div class="mb-3">
+          <p><strong>Fecha de publicación: </strong> 2023-02-24</p>
+
+      </div>
+
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+</div>
+</div>

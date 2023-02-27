@@ -1,0 +1,73 @@
+<div class="container-lg my-5">
+    <div class="card">
+        <form>
+            <!-- HEADER -->
+            <div class="card-header py-4 px-5 bg-light border-0">
+                <h4 class="mb-0 fw-bold">Subir pieza</h4>
+            </div>
+            <!-- BODY -->
+            <div class="card-body px-5">
+                <!-- INFO PIEZA -->
+                <div class="row gx-xl-5">
+                    <div class="col-md-4">
+                        <h5>Información de la pieza</h5>
+                        <p class="text-muted">
+                            Aporta información sobre tu pieza músical para el resto de
+                            usuarios. Podrás modificarla más tarde.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label for="pieza_titulo" class="form-label">*Título</label>
+                            <input type="text" class="form-control" id="pieza_titulo" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="pieza_descripcion" class="form-label">Añadir descripción</label>
+                            <textarea class="form-control" name="pieza_descripcion" id="pieza_descripcion" rows="4">
+                </textarea>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5" />
+                <!-- INSTRUMENTOS -->
+                <div class="row gx-xl-5">
+                    <div class="col-md-4">
+                        <h5>Instrumentos</h5>
+                        <p class="text-muted">
+                            Selecciona los instrumentos que componen tu pieza músical.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label for="pieza_instrumentos" class="form-label">Seleccionar instrumento/s</label>
+                            <!-- PARA OBTENER LISTA DE ELEMENTOS SELECCIONADOS -> document.querySelectorAll('#instrumentos :checked') -->
+                            <select name="pieza_instrumentos" id="pieza_instrumentos" multiple>
+                                <!-- EMPIEZA FOR EACH, CADA OPCION CONTENDRA EL VALOR DEL ID DEL INSTRUMENTO -->
+                                <option value="1">Flauta</option>
+                                <option value="2">Violin</option>
+                                <option value="3">Piano</option>
+                                <option value="4">Saxofon</option>
+                                <option value="5">Violonchelo</option>
+                                <option value="6">Clarinete</option>
+                                <option value="7">Trompeta</option>
+                                <option value="8">Contrabajo</option>
+                                <option value="9">Clavicordio</option>
+                                <option value="10">Tuba</option>
+                            </select>
+                            <!-- TERMINA FOR EACH -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <div class="card-footer text-end py-4 px-5 bg-light border-0">
+                <button class="btn btn-danger btn-rounded" data-ripple-color="primary">
+                    Cancelar
+                </button>
+                <button type="submit" class="btn btn-dark btn-rounded">
+                    Subir
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
