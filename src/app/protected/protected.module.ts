@@ -5,13 +5,15 @@ import { ProtectedRoutingModule } from './protected-routing.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { MySheetsComponent } from './pages/my-sheets/my-sheets.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { AddSheetComponent } from './pages/add-sheet/add-sheet.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     MySheetsComponent,
-    ProfileComponent
+    ProfileComponent,
+    AddSheetComponent
   ],
   imports: [
     CommonModule,
