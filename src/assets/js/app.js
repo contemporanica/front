@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let body = document.getElementsByTagName('body')[0]
     if(window.location.href.indexOf('index') == -1 && window.location.href.indexOf('registro') == -1 && window.location.href.indexOf('login') == -1) {
         body.style.backgroundImage = 'none'
-    }
 
     const search = document.querySelector('.input-group input'),
         table_rows = document.querySelectorAll('tbody tr'),
