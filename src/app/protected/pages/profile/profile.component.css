@@ -1,0 +1,65 @@
+:root {
+    /* Tipografia */
+    --parrafo: 'Bitter', serif;
+    --titulo: 'M PLUS Rounded 1c', sans-serif;
+  
+    /* Colores */
+    --rosa: #e47777;
+    --blanco: #ffff;
+    --negro: #000;
+    --gris: #fffb;
+  }
+  
+  /* Globales */
+  ::-webkit-scrollbar {display: none;}
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--parrafo);
+    background-image: url("../img/partituraFondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1{
+    font-family: var(--titulo);
+    z-index: 2;
+    top: 130px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(246, 242, 242);
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    transition: all 1.5s ease-out;
+    border-radius: 25px;
+  }
+  
+  .texto-rosa {
+    color: var(--rosa);
+  }
+  
+  a.texto-rosa:hover {
+    color: var(--blanco);
+  }
+  
+  .titulo{
+    color: rgb(246, 242, 242);
+  }
+  
+  .btn-primary {
+    background-color: var(--rosa);
+    border-width: 0px;
+    color: var(--blanco);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--rosa);
+    border-color: var(--negro);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -50px 36px -28px inset;
+  }
