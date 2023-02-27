@@ -12,6 +12,10 @@ export class LoginComponent {
 
   }
 
+  get usuario() {
+    return this.formUser.get('usuario') as FormControl;
+  }
+
   get email() {
     return this.formUser.get('email') as FormControl;
   }
@@ -21,6 +25,7 @@ export class LoginComponent {
   }
 
   formUser = this._fb.group( {
+    'usuario': ['', Validators.required],
     'email': ['', [Validators.required, Validators.email]],
     'pass': ['', Validators.required]
   });
