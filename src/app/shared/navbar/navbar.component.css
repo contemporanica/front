@@ -1,8 +1,10 @@
 .navbar {
-  font-family: var(--parrafo);
+  
   text-transform: uppercase;
 }
 
 .navbar-brand {
+  font-size: 2rem;
+  font-family: var(--titulo);
   text-transform: uppercase;
 }
