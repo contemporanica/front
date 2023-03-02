@@ -1,6 +1,6 @@
 # CONTEMPORÁNICA 
 
-A continuación se va a documentar el proceso de creación del logo de la página web Contemporánica para dejar constancia de todas las anécdotas, peripecias y fases por las que pasó la creadora así como el propio diseño.
+A continuación, se va a documentar el proceso de creación del logo de la página web Contemporánica para dejar constancia de todas las anécdotas, peripecias y fases por las que pasó la creadora así como el propio diseño.
 
 ## LA CREACIÓN DEL LOGO 🚀
 
