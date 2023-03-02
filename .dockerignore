@@ -7,3 +7,5 @@
 .gitignore
 *.zip
 *.md
+db_data
+dist
