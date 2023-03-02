@@ -1,0 +1,19 @@
+.w-600 {
+  width: 600px;
+}
+
+.login {
+  text-align: center;
+  width: 100%;
+}
+
+.registrate {
+  color: var(--blanco);
+  background: rgba(0,0,0,0.5);
+  padding: .3rem;
+  border-radius: .5rem;
+}
+
+.registrate:hover {
+  color: var(--rosa);
+}
