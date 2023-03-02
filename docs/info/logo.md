@@ -43,7 +43,7 @@ Se utilizaron las siguientes fuentes extraídas de Google Fonts (https://fonts.g
   font-weight: 400;
   font-display: swap;
 
-## Colores 🛠️
+## Colores: 🛠️
 
 Se utilizaron los siguientes tonos de color extraídos de la paleta de Photoshop CS 19:
 
@@ -56,7 +56,7 @@ Se utilizaron los siguientes tonos de color extraídos de la paleta de Photoshop
 
 * [URL] (data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABODcYhAAEl463hAAAAAElFTkSuQmCC);
 
-## Imágenes utilizadas 📖
+## Imágenes utilizadas: 📖
 
 Como imagen decorativa de fondo se ha recurrido a una foto de partituras con un desenfoque aplicado.
 
