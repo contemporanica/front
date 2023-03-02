@@ -23,21 +23,21 @@
                         <li class="nav-link" *ngFor="let item of templateUserMenu" [routerLink]="[ item.route ]">
                             {{item.text}}
                         </li>
-                        <li class="dropdown list-unstyled">
-                          <a class="nav-link dropdown-toggle btn btn-danger text-white" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Perfil
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                              <ul class="p-0">
-                                  <li class="dropdown-item" *ngFor="let item of templateProfileMenu"
-                                      [routerLink]="[ item.route ]">
-                                      {{item.text}}
-                                  </li>
-                              </ul>
-                              <hr class="dropdown-divider" />
-                              <li><a class="dropdown-item" (click)="logout()">Cerrar sesión</a></li>
-                          </ul>
+                        <li class="dropdown list-unstyled ms-2">
+                            <a class="nav-link dropdown-toggle btn btn-danger text-white" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Perfil
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <ul class="p-0">
+                                    <li class="dropdown-item" *ngFor="let item of templateProfileMenu"
+                                        [routerLink]="[ item.route ]">
+                                        {{item.text}}
+                                    </li>
+                                </ul>
+                                <hr class="dropdown-divider" />
+                                <li><a class="dropdown-item" (click)="logout()">Cerrar sesión</a></li>
+                            </ul>
                         </li>
 
                     </ul>
