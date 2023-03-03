@@ -24,7 +24,7 @@ export class SearchBarComponent implements OnInit{
   //Recoger el valor del input cuando el usuario vaya escribiendo y mostrar la lista de sugerencias
   onInputChange(event: string): void {
     if (event.length > 0) {
-      this.http.get<any[]>('url_api_contemporanica', {
+      this.http.get<any[]>('url_api_', {
         params: {
           q: event
         }
