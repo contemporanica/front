@@ -9,6 +9,7 @@
 
 ## 4. [Documentación Registro, login, footer ](./docs/info/Registro%2CLogin%2Cfooter.md)
 
+## 5. [Documentación Subir pieza, Editar pieza, Buscar piezas, Mis piezas, Detalle pieza](./docs/info/subir-pieza%2Cbuscar-piezas%2Cmis-piezas.md)
 
 
 
