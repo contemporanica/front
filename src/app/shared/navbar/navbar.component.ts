@@ -19,7 +19,7 @@ export class NavBarComponent {
     },
     {
       text: 'Registrarse',
-      route: './auth/signup',
+      route: './auth/register',
     },
   ];
 
@@ -30,7 +30,7 @@ export class NavBarComponent {
     },
     {
       text: 'Subir partitura',
-      route: './auth/signup',
+      route: './browse/add',
     },
   ];
 
