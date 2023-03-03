@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: contemporanica/front:latest , contemporanica/front:${{github.event.pull_request.title}}
+          tags: contemporanica/front:latest , contemporanica/front:latest
