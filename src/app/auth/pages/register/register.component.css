@@ -1,14 +1,20 @@
-.w-600{
+/* Login y Registro */
+.w-600 {
     width: 600px;
-}
-
-.texto-rosa{
-    color:#e47777 ;
-}
-
-.btn-primary{
-    background-color: #e47777 ;
-    border-width: 0px;
-    color: white;
-}
-
+  }
+  
+  .login {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .registrate {
+    color: var(--blanco);
+    background: rgba(0,0,0,0.5);
+    padding: .3rem;
+    border-radius: .5rem;
+  }
+  
+  .registrate:hover {
+    color: var(--rosa);
+  }

@@ -5,7 +5,8 @@ WORKDIR /app
 COPY package.json /app
 RUN npm install
 COPY . /app
-RUN npm run build --prod
+RUN npm run build 
 #Segunda Etapa
 FROM nginx:stable-alpine
 COPY --from=build-step /app/dist/front /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf

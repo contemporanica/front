@@ -1,70 +1,36 @@
-<div
-  class="modal modal-signin position-static d-block bg-secondary py-5"
-  tabindex="-1"
-  role="dialog"
-  id="modalSignin"
->
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-4 shadow">
-      <div class="modal-header p-5 pb-4 border-bottom-0">
-        <h1 class="fw-bold mb-0 login texto-rosa">Identifícate</h1>
+<div class="container-lg row justify-content-center my-5 mx-auto">
+  <div class="text-center w-600">
+
+      <h1 class="fw-bold">Identifícate</h1>
+
+      <div class="my-5 p-3">
+          <form class="mb-3" (ngSubmit)="submit()" [formGroup]="formUser">
+              <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="usuario" placeholder="usuario" formControlName="usuario" name="usuario">
+                  <label for="usuario">Usuario </label>
+                  <div class="text-danger mt-2 fs-5 fw-light text-start" [hidden]="usuario.valid || usuario.pristine">El nombre es obligatorio</div>
+              </div>
+              <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com" formControlName="email">
+                  <label for="email">Email </label>
+                  <div class="text-danger mt-2 fs-5 fw-light text-start" [hidden]="email.valid || email.pristine">
+                    <span *ngIf="email.errors?.['required']">
+                      El email es obligatorio
+                    </span>
+
+                    <span *ngIf="email.errors?.['email']">
+                      Escriba un email válido
+                    </span>
+                  </div>
+              </div>
+              <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-3" id="contrasena" placeholder="Password" formControlName="pass">
+                  <label for="contrasena">Contraseña</label>
+                  <div class="text-danger mt-2 fs-5 fw-light text-start" [hidden]="pass.valid || pass.pristine">La contraseña es obligatorio</div>
+              </div>
+              <button class="w-100 btn btn-lg rounded-3 btn-primary" type="submit" [disabled]="formUser.invalid">Enviar</button>
+          </form>
       </div>
-
-      <div class="modal-body p-5 pt-0">
-        <!-- Con formGroup da nombre al formulario para saber su estado -->
-        <form class="" (ngSubmit)="submit()" [formGroup]="formUser" action=""> 
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control rounded-3"
-              id="floatingInput"
-              name="email"
-              placeholder="name@example.com"
-              formControlName="email"
-            />
-            <label for="floatingInput">Email </label>
-            <!-- Div para mostrar errores -->
-            <div class="text-danger mt-2 fs-6" [hidden]="email.valid || email.pristine">
-              <span *ngIf="email.errors?.['required']">
-                El email es obligatorio
-              </span>
-
-              <span *ngIf="email.errors?.['email']">
-                Escriba un email válido
-              </span>
-            </div>
-          </div>
-
-          <div class="form-floating mb-3">
-            <input
-              type="password"
-              class="form-control rounded-3"
-              id="floatingPassword"
-              name="pass"
-              placeholder="Password"
-              formControlName="pass"
-            />
-            <label for="floatingPassword">Contraseña</label>
-            <!-- Div para mostrar errores -->
-            <div class="text-danger mt-2 fs-6 error" [hidden]="pass.invalid || !pass.pristine">La contraseña es obligatorio</div>
-          </div>
-
-          <button
-            class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
-            type="submit"
-            [disabled]="formUser.invalid" 
-          >
-            Enviar
-          </button>
-
-          <div>
-            <a href="registro.html" class="texto-rosa">
-              ¿No tienes cuenta? Registrate aquí</a
-            >
-          </div>
-        </form>
-      </div><!-- Fin modal formulario -->
-    </div>
-  </div> <!-- Fin modal titulo -->
-</div> <!-- Fin modal -->
-
+      <a href="../register" class="registrate"> ¿No tienes cuenta? Registrate aquí</a>
+  </div>
+</div>

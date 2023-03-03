@@ -1,0 +1,40 @@
+version: '3'
+services:
+  dbcontemporanica:
+    image: contemporanica/bbdd:latest
+    container_name: dbcontemporanica
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ContemporanicaDaw2@23
+      MYSQL_DATABASE: contemporanica
+      MYSQL_USER: contemporanica
+      MYSQL_PASSWORD: ContemporanicaDaw2@23
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db_data:/var/lib/mysql
+  apicontemporanica:
+    image: contemporanica/api:latest
+    container_name: apicontemporanica
+    ports:
+      - "4000:4000"
+    depends_on:
+      - dbcontemporanica
+    environment:
+      DB_HOST: dbcontemporanica
+      DB_USER: contemporanica
+      DB_PASSWORD: ContemporanicaDaw2@23
+      DB_PORT: "3306"
+      TOKEN: a944114ba4149684eb4e6b00e6093fdb
+  frontcontemporanica:
+    image: contemporanica/front:latest
+    container_name: frontcontemporanica
+    ports:
+      - "80:80"
+    depends_on:
+      - apicontemporanica
+      - dbcontemporanica
+    environment:
+      TOKEN: a944114ba4149684eb4e6b00e6093fdb
+volumes:
+  db_data:
