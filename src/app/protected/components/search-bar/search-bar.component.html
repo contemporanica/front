@@ -1,4 +1,65 @@
-<p>search-bar works! </p>
+<div class="container-lg mb-4 mx-auto">
+  <div class="card my-4">
+    <form>
+      <!-- HEADER -->
+      <div class="card-header py-4 px-5 bg-light border-0">
+        <h4 class="mb-0 fw-bold">Filtrar búsqueda</h4>
+      </div>
 
+      <!-- BODY -->
+      <div class="card-body px-5">
+        <div class="row gx-xl-5">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="titulo" class="form-label">Título a buscar</label>
+                  <input type="text" class="form-control" name="musicSheet" id="titulo" [(ngModel)]="musicSheet"
+                    (ngModelChange)="onInputChange($event)" />
+                </div>
+              </div>
 
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="compositor" class="form-label">Nombre del compositor</label>
+                  <input type="text" class="form-control" name="composer" id="compositor" [(ngModel)]="composer"
+                    (ngModelChange)="onInputChange($event)" />
+                </div>
+              </div>
+              <ul>
+                <li *ngFor="let sugerencia of sugerencias">{{ sugerencia }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <!-- FILTRO POR INSTRUMENTOS -->
+        <div class="row gx-xl-5">
+          <div class="mb-3">
+            <label for="instrumentos" class="form-label">Seleccionar instrumento/s</label>
+            <!-- PARA OBTENER LISTA DE ELEMENTOS SELECCIONADOS -> document.querySelectorAll('#instrumentos :checked') -->
+            <select name="instrumentos" id="instrumentos" multiple>
+              <!-- EMPIEZA FOR EACH, CADA OPCION CONTENDRA EL VALOR DEL ID DEL INSTRUMENTO -->
+              <option value="1">Flauta</option>
+              <option value="2">Violin</option>
+              <option value="3">Piano</option>
+              <option value="4">Saxofon</option>
+              <option value="5">Violonchelo</option>
+              <option value="6">Clarinete</option>
+              <option value="7">Trompeta</option>
+              <option value="8">Contrabajo</option>
+              <option value="9">Clavicordio</option>
+              <option value="10">Tuba</option>
+            </select>
+            <!-- TERMINA FOR EACH -->
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="card-footer text-end py-3 px-5 bg-light border-0">
+        <button type="submit" (click)="onSearch()" class="btn btn-dark btn-rounded">Aplicar</button>
+      </div>
+    </form>
+  </div>
+</div>
