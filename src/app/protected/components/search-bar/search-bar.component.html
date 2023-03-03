@@ -14,16 +14,16 @@
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="titulo" class="form-label">Título a buscar</label>
-                  <input type="text" class="form-control" name="musicSheet" id="titulo" [(ngModel)]="musicSheet"
-                    (ngModelChange)="onInputChange($event)" />
+                  <input type="text" class="form-control" name="musicSheet" id="titulo" formControlName="musicSheet"
+                    (ngModelChange)="onInputChange()" />
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="mb-3">
                   <label for="compositor" class="form-label">Nombre del compositor</label>
-                  <input type="text" class="form-control" name="composer" id="compositor" [(ngModel)]="composer"
-                    (ngModelChange)="onInputChange($event)" />
+                  <input type="text" class="form-control" name="composer" id="compositor" formControlName="composer"
+                    (ngModelChange)="onInputChange()" />
                 </div>
               </div>
               <ul>
