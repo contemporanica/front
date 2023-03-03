@@ -9,6 +9,7 @@
 
 ## 4. [Documentación Registro, login, footer ](./docs/info/Registro%2CLogin%2Cfooter.md)
 
+## 6. [Documentación de las Secciones que tiene la aplicación  ](./docs/info/SeccionesDeLaAplicacion.md)
 
 
 
