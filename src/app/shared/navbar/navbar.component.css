@@ -1,0 +1,14 @@
+.navbar {
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: var(--titulo);
+  text-transform: uppercase;
+}
+
+.nav-link,
+.dropdown-item {
+  cursor: pointer;
+}

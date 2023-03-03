@@ -25,7 +25,7 @@
         <div class="form-floating mb-3">
           <input type="date" class="form-control rounded-3" id="fechaNac">
           <label for="fechaNac">Fecha de Nacimiento </label>
-          
+
         </div>
         <div class="form-floating mb-3">
           <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com"
@@ -50,11 +50,8 @@
         </div>
         <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit"
           [disabled]="formUser.invalid">Enviar</button>
-        <div>
-          <a href="../login" class="texto-rosa">
-            ¿Ya tienes cuenta? Haz login aquí</a>
-        </div>
       </form>
+      <a href="./auth/login" class="registrate mt-4">¿Ya tienes cuenta? Inicia sesión aquí</a>
     </div>
   </div>
 </div>
